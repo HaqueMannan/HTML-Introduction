@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>HTML Cheatsheet</title> <!-- the content "HTML Cheatsheet" will appears in the Page Tab -->
+    </head>
+
+    <body>
+        <!-- This is a comment and will not appear in the browser -->
+
+<!-- Important Note:
+Browsers have a default stylesheets for HTML files for example in Google Chrome the default Stylesheet is user_agent_style_sheet (you can view this information in Chrome Developer Tool > Elements Tab > Styles Tab). The default style are applied to the Tag elements.
+CSS files can override the default style sheets. -->
+
+        <!-- Headings -->
+        <h1>Heading One</h1>
+        <h2>Heading Two</h2>
+        <h3>Heading Three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading Five</h5>
+        <h6>Heading Six</h6>
+
+
+        <!-- Paragraphs -->
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Nulla iste porro aliquid</strong> delectus repellat expedita itaque ratione reiciendis dolores magni fugiat impedit nobis, nemo rerum <em>perferendis!</em> Molestias voluptas quidem numquam!
+        </P>
+
+<!-- Formatting Tags Examples:
+<strong></strong> = Important Text.
+The symantic version of the <b></b> bold text tags (bold text tags should no longer be used).
+
+<em></em> = Emphasised Text.
+<cite></cire>
+The symantic version of the <i></i> italic text tags (italic text tags should no longer be used).
+
+Note: you can use CSS to change the styling of formatting tags for exampe: the strong tag does not necessarily have to make the text bold.
+-->
+
+        <P>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quibusdam cumque doloremque architecto <a href="https://www.google.com" target=_blank>quasi fugiat</a> perferendis quo voluptatibus consequuntur <a href="">similique</a>. Nisi in voluptates beatae autem ab, eius distinctio, veritatis placeat commodi numquam provident nobis facere.
+        </P>
+
+<!-- Attributes Tag Examples:
+- Attributes provide additional information about an element
+- Attributes are always specified in the start tag
+- Attributes usually come in name/value pairs like: name="value"
+
+Example:
+<a href=""> = the <a> Anchor Tag has an attribute of href=""
+<img src=""> = the <img> Image Tag has an attribute of src=""
+<img src="" width="" height=""> = the <img> Image Tag has three attributes of src="", width="" & height="""
+___________________________________________________________
+THE <a> ANCHOR ELEMENT TAG
+___________________________________________________________
+<a> Tags = creates hyperlinks to other web pages, files, locations within the same page, email addresses etc.
+The link address is specified in the href="" attribute.
+
+The href attribute can linke to local or external links e.g.
+    local = href="about.htm"
+    External = href="https//www.google.com"
+
+href="" = this will appear on the browser as a placeholder link (see examples in the above paragraph).
+
+The attribute target=_blank = opens the link in a new browser tab (by defulat the link opens in the same tab). 
+___________________________________________________________ 
+-->
+
+
+        <!--Quotations -->
+        <blockquote cite="http://www.google.com">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut provident quae necessitatibus nesciunt quo, dolorum quam dolor distinctio eveniet dicta, tempore exercitationem. Sed porro quos ad aliquam hic harum aspernatur ex quaerat iste in, accusantium, reprehenderit natus perferendis id nam dicta <cite>delectus quia illo maxime sit cumque, suscipit amet numquam!</cite>
+        </blockquote>
+
+        <p>Hover over <abbr title="World Wide Web">WWW</abbr> to view the abbreviation</p>
+
+<!-- Blockquotes add a special formats to the text but does not show the cite reference; however, the cite wil appear in the html source code.
+The <abbr> tag underlines the word with dotted lines which indicates to the user that the abbreviated word will appear when the user hovers over the word with their mouse.
+<Cite> tag is the semantic version of the italic <i> tag used by the browser.
+-->
+
+
+        <!-- Lists -->
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+
+<!-- List items can be <ol> Ordered or <ul> Unordered 
+Ordered list have numbers whereas unordered list have bullet points.
+Unordered Lists are generally used to create navigation bars on webpages. -->
+
+
+        <!-- Tables -->
+        <Table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ben Crowley</td>
+                    <td>ben.crowley@email.com</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>john.smith@email.com</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Elizabeth Penny</td>
+                    <td>e.penny@email.com</td>
+                    <td>35</td>
+                </tr>
+            </tbody>
+        </Table>
+
+<!-- Table Elements
+1. Tables are used for tabular data only and should not be used for layouts.
+2. Tables are made up of Table header <thead> and Table Body <tbody> elements. 
+4. Table Rows element <tr> defines the table row. The data should be nested in the table row tags.
+5. Table Header:
+    Defines the Column Headers through the Table Header <th> tags. The <th> tags should be within the Table Row <tr> tags. 
+6. Table Body:
+The body holds the data which are stored within the Table Data <td> tags. These must be nested in the <tr> tags.
+Each row of data must be on its own table row i.e there must be multuple Table Row <tr> tags with its own <td> data.
+-->
+
+    <br> <!--This is a linebreak to separate the Table obove from the form -->
+    <hr> <!-- This creates a horizontal line across the page-->
+    <br>
+
+
+        <!-- Forms -->
+        <form action="actionprocess.php" method="POST">
+            <div>
+                <label>First Name</label>
+                <input type="text" Name="firstName" Value="John">
+            </div>
+            <br>
+
+            <div>
+                <label>Last Name</label>
+                <input type="text" Name="lastName" Value="Wilson">
+            </div>
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type="Email" Name="email" placeholder="Please enter you email.">
+            </div>
+            <br>
+
+            <div>
+                <label>Message</label>
+                <textarea Name="Message"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label>Gender</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+            </div>
+            <br>
+
+            <div>
+                <label>Age</label>
+                <input type="number" Name="Age">
+            </div>
+            <br>
+
+            <div>
+                <label>D.O.B</label>
+                <input type="date" Name="DOB">
+            </div>
+            <br>
+            <input type="submit" Name="Submit-Form" Value="Submit Button">
+        </form>
+
+<!-- You can build the look of the form using HTML & CSS but you cannot create the functionality of a form. the functionality is created using programming languages such as PHP, Python etc.)
+1. Forms require the additonal Tags of Label <label> and Input <input> to create a form element.
+2. Labels and Inputs are both inline elements. We can wrap the labels in <div> tags to make them move onto a new line as <div> are block elements.
+3. The <textarea> element is a special Tag for text fields.
+4. The <select> element requires the <option> Tags to make it work as the options are the values available for the user to select within the select dropdown list.
+5. The Value="" attribute is different to the placeholder="" attribute (see above).
+___________________________________________________________
+FORM ATTRIBUTES
+___________________________________________________________
+1. The action="" attribute submits the form to a certain page for example = "actionprocess.php" page
+2. The method="" attribute relate to the HTTP methods of: POST, GET, UPDATE, DELETE when submitting the form.
+___________________________________________________________
+INPUT ATTRIBUTES
+___________________________________________________________
+1. The Type="" attribute relates to the type of input for example: "Text", "Number", "Password", "Submit", "Reset", "Radio", "Checkbox", "Button", "Date", "Email" etc.
+2. Name="" attribute relates to server side programming ie. how to grab the value of this form submitted.
+3. Value="" attribute relates to the default value (you can replace this with Placeholder="" attribute).
+___________________________________________________________
+
+Note: When the user clicks the submit button, the form will try to take the user to the actionprocess.php page as defined in the form action="" attribute; however, this page does not exist. 
+-->
+
+
+        <!-- Buttons  -->
+        <button>Click Me</button>
+        <br>
+<!-- Button can be outside of forms. HTML does not provide functionality to buttons and wil not be covered in this Cheatsheet. We would require Javascript (Javascript allows for interactions with a webpage/web application). The example syntax for an onclick event would be:
+<button click="someJavascriptFunction">Click Me</button>
+
+HTML = Markup Language (Static Content).
+CSS = Style Sheet (Static Style).
+Javascript = Programming Language (Dynamic/Interactivity).
+-->
+
+
+        <!-- Images -->
+        <div>
+            <img src="https://www.google.co.uk/chrome/assets/common/images/chrome_logo_2x.png?mmfb=a5234ae3c4265f687c7fffae2760a907" alt="GoogleLogo" width="200">
+        <div>
+
+        <div>
+            <a href="images/FirefoxLogo.png">
+                <img src="images/img.jpg" alt="GoogleLogo.jpg">
+            </a>
+        </div>
+        <br>
+
+<!-- Images source can be local or from an link address.
+Images are inline element.
+When the Image Source is local, we need to be aware of the file directory in order to add the correct src="" attribute - for example:
+1. img.jpg stored in the same folder as the index.html file = <img src="img.jpg"
+2. img.jpg is stored in another folder (called images) which is different to the index.html file = <img src="/images/img.jpg"
+3. Always use an alt="" attribute with images because this allows a text alternative to appear should the image source cannot be found.
+4. We can use width and height attributes to images; however, we can also do this with CSS. If we omit one of the width or height attriutes for example width="200" the image will autosize the height and vice versa. 
+5. Browser can open other type of files other than html for example images. We can use <a href=""></a> tags to open a local image or open a link address to an image from the web.
+-->
+
+
+        <!--HTML5 Semantics Tutorial-->
+        <hr>
+        <div>
+            <a href="semantic.html">Go to semantic.html and open the source code to look at the HTML5 semantics to create the Blog Webpage.</a>
+        </div>
+        
+        <!-- add extra margin to the top so that we can scroll at the when we get near to the bottom of the page i.e bottom elements can be viewed in the middle of the browser when scrilling down.-->
+    </body>
+    <div style="margin-top:500px"></div>
+
+</html>

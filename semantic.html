@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content = "Awesome Blog Site"> <!-- meta tag for website description.--> 
+    <meta name="Keywords" content = "web design blog, web dev blog, compnany name, HTML Cheatsheet, HTML Semantic, Tutorial"> <!-- meta tag for google keywords for the website.-->
+    <title>HTML Semantic Example</title>
+
+<!--CSS can be added in the HTML document using the <style> tag; however, it is good practice to use a CSS sheet which the HTML can reference to - otherwie the HTML document could get too busy and disorganised.
+Below is a demonstration of how ID/Class can be used to style certain elements of the HTML webpage. 
+1. The hash/pound (#) symbol followed by the ID Name is used to reference an element with the named ID.
+2. The dot (.) symbol followed by the Class Name is ysed to reference an element with the named class.-->
+    <style type="text/CSS">
+        #main-header{
+            text-align: center;
+            background-color: black;
+            color:white;
+            padding:10px;
+        }
+        
+        #main-footer{
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>My Blog</h1>
+    </header>
+
+    <a href="index.html">Go to index.html</a>
+
+    <section>
+        <article class="post">
+            <h3>Blog Post One</h3>
+            <small>Posted by Mellanie Howser on December 21 2017</small>
+            <P>Aliquid numquam error dicta sequi, eligendi porro. Dolores corrupti, veniam quia pariatur nobis beatae soluta magni, molestias vitae dolorum harum dicta minima a praesentium error incidunt ipsum delectus! Debitis, vel cupiditate.</P>
+            <a href="post.html">Read More</a>
+        </article>
+
+        <article class="post">
+                <h3>Blog Post Two</h3>
+                <small>Posted by Sam Hirst on December 21 2017</small>
+                <P>Suscipit porro a voluptatem omnis mollitia at eos laboriosam perspiciatis hic. Fugiat aliquam ullam modi nemo ea corrupti est minus ex, labore accusamus pariatur doloribus earum recusandae assumenda minima veniam quia. Voluptatum deserunt voluptatibus minima odit laborum inventore eum, dicta est maxime!</P>
+                <a href="post.html">Read More</a>
+            </article>
+
+        <article class="post">
+                <h3>Blog Post Three</h3>
+                <small>Posted by Kathy Nyuen on December 21 2017</small>
+                <P>Inventore, vero, voluptates vitae pariatur debitis officiis fuga ex possimus nemo natus porro cupiditate? Perferendis similique nobis inventore temporibus molestias eos, necessitatibus alias quae aliquam totam et sunt maiores, est beatae voluptates quibusdam nostrum! Impedit saepe velit, molestiae molestias voluptates praesentium explicabo ea earum illo ipsam tempore voluptas incidunt? Enim, expedita dolorem. Similique explicabo iste molestiae cupiditate in quidem aliquid nobis qui!</P>
+                <a href="post.html">Read More</a>    
+            </article>
+    </section>
+
+    <aside>
+        <h3>Categories</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer id="main-footer">
+        <p>Copywrite &copy;2017, My Website</p>
+    </footer>
+
+</body>
+</html>
+
+
+<!-- HTM Semantics
+1. HTML semantics allows you and the browser to clearly understand/describe the layout of your document.
+2. You can use semantics more than once i.e. you may have more than one header semantic tags on your page to clearly mark the headers of your document (or you can wrap other elements in header tags even though they are not headers).
+3. You should give tags ID or Class attributes, this helps identify different elements on your page (for example if you have more than one header tag). ID and Class are used alot for styling certain elements of your website using CSS.
+4. Above we have added CSS Style within the HTML document to demonstrate how ID/Class can be used to style certain elements of a webpage. CSS should be contained in a separate file and the HTML should reference the CSS to bring in the style. This is to prevent disorganisation of your prpjects especially when working on larger projects. By separating all HTML and CSS componants we are able to maintain documents much more efficiently which will allow for quicker changes to be implmenented for example to company colour has now changed from RED to BLUE and needs to be reflected on the webpage.
+5. &copy; adds the special copywrite character to the webpage - other examples:
+    Entity      Number      Symbol      Description
+    &euro;      &#169;      €           EURO SIGN
+    &reg:       &#174;      ®           REGISTERED SIGN
+    &copy;      &#169;      ©           COPYRIGHT SIGN
+    &#8482;     &trade;     ™           TRADEMARK
+6.You can add meta tags for description of your webpage as well as meta tag for google keywords for when people search for your website through google.
